@@ -1,0 +1,41 @@
+### SIGN UP
+POST http://localhost:3000/auth/signup
+Content-Type: application/json
+Accept: application/json
+
+{
+    "email": "test2@gmail.com",
+    "password": "12345678",
+    "full_name": "John Doe"
+}
+
+### LOGIN
+POST http://localhost:3000/auth/login
+Content-Type: application/json
+Accept: application/json
+
+{
+    "email": "test@gmail.com",
+    "password": "12345678"
+}
+
+
+### ENABLE 2FA REQUEST
+POST http://localhost:3000/auth/enable_2fa
+Content-Type: application/json
+Accept: application/json
+
+{
+    "email": "test2@gmail.com"
+}
+
+
+### COMPLETE 2FA SETUP
+POST http://localhost:3000/auth/complete_2fa_setup
+Content-Type: application/json
+Accept: application/json
+
+{
+    "email": "test2@gmail.com",
+    "token": "911923"
+}
