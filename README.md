@@ -7,3 +7,8 @@ Processes Includes:
 - Scan returned QRcode, or enter key in an Authenticator app like Google Authenticator to sync accounts.
 - Submit Token from authenticator app to complete 2fa enabling process
 - To login to account, provide username, password and token from authenticator app.
+
+### RUN APP
+``` docker-compose up ```
+
+Example requests are found in ``` request.http ``` file
